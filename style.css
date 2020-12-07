@@ -1,0 +1,157 @@
+.main__container {
+  padding: 1% 15% 2% 15%;
+}
+
+.header {
+  border: 2px solid rgb(29, 161, 242);
+  width: 20%;
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: 20px;
+  margin-left: 40%;
+}
+
+.header > h1 > .hot {
+  color: #ff0000;
+}
+
+/* .header > h1 > .or {
+} */
+
+.header > h1 > .cold {
+  color: #00ffff;
+}
+
+.instruction {
+  margin-bottom: 1%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.game__container {
+  display: flex;
+}
+
+.fields,
+#thermometer {
+  flex: 1;
+}
+.fields {
+  margin-top: 10%;
+  padding-left: 20%;
+}
+
+.input {
+  width: 98%;
+  margin-bottom: 1% solid;
+}
+
+.input > .text-input {
+  border: 0px;
+  border-bottom: 1px solid rgb(29, 161, 242);
+  width: 100%;
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  margin: 2% 0px 5% 0px;
+}
+#submit,
+#newGame {
+  border: 1px solid rgb(29, 161, 242);
+  width: 100%;
+  outline: none;
+  border-radius: 45px;
+  margin-left: 1%;
+}
+
+#submit,
+#newGame {
+  height: 10%;
+  margin-top: 5.5%;
+}
+.header,
+#submit,
+#newGame {
+  padding: 2% 0px 2% 0px;
+}
+
+/* thermometer */
+
+#thermometer {
+  position: relative;
+  width: 100px;
+  height: 517px;
+}
+
+#th-case .th-top {
+  height: 23px;
+  width: 46px;
+  border: 2px solid rgb(29, 161, 242);
+  border-bottom: none;
+  margin: auto;
+  border-radius: 25px 25px 0 0;
+  background: white;
+}
+
+#th-case .th-middle {
+  position: relative;
+  z-index: 1;
+  height: 400px;
+  width: 46px;
+  border: 2px solid rgb(29, 161, 242);
+  border-top: none;
+  border-bottom: none;
+  margin: auto;
+  background: white;
+}
+
+#th-case .th-bottom {
+  height: 96px;
+  width: 96px;
+  border: 2px solid rgb(29, 161, 242);
+  border-radius: 50px;
+  margin: -8px auto;
+  background: white;
+}
+
+#th-mercury {
+  position: absolute;
+  bottom: 0;
+}
+
+#th-mercury .th-top {
+  position: absolute;
+  z-index: 1;
+  bottom: 85px;
+  left: 35px;
+  height: 0px;
+  width: 30px;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 15px 15px 0 0;
+}
+
+#th-mercury .th-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 150px;
+  height: 80px;
+  width: 80px;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 40px;
+}
+
+#th-scale {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 44%;
+}
+
+#th-scale div {
+  height: 5px;
+  width: 25px;
+  background: black;
+  margin-top: 60px;
+}
