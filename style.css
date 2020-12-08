@@ -15,9 +15,6 @@
   color: #ff0000;
 }
 
-/* .header > h1 > .or {
-} */
-
 .header > h1 > .cold {
   color: #00ffff;
 }
@@ -28,21 +25,14 @@
   font-size: 18px;
 }
 
-.game__container {
-  display: flex;
-}
-
-.fields,
-#thermometer {
-  flex: 1;
-}
 .fields {
-  margin-top: 10%;
-  padding-left: 20%;
+  margin-top: 20%;
+  padding: 0px 5% 0px 10%;
+  float: left;
 }
 
 .input {
-  width: 98%;
+  width: 100%;
   margin-bottom: 1% solid;
 }
 
@@ -55,6 +45,7 @@
 
 .btn {
   display: flex;
+  width: 350px;
   margin: 2% 0px 5% 0px;
 }
 #submit,
@@ -63,7 +54,7 @@
   width: 100%;
   outline: none;
   border-radius: 45px;
-  margin-left: 1%;
+  margin-left: 2%;
 }
 
 #submit,
@@ -80,9 +71,12 @@
 /* thermometer */
 
 #thermometer {
+  float: left;
   position: relative;
   width: 100px;
   height: 517px;
+
+  margin-left: 20%;
 }
 
 #th-case .th-top {
@@ -135,7 +129,7 @@
 #th-mercury .th-bottom {
   position: absolute;
   bottom: 10px;
-  left: 150px;
+  left: 10px;
   height: 80px;
   width: 80px;
   background: linear-gradient(to right, #31d35c, #2bb7da);
@@ -146,7 +140,7 @@
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 44%;
+  left: 28%;
 }
 
 #th-scale div {
@@ -154,4 +148,43 @@
   width: 25px;
   background: black;
   margin-top: 60px;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 375px) {
+  .main__container {
+    padding: 1% 15% 2% 15%;
+  }
+
+  .header,
+  .instruction {
+    margin-bottom: 12%;
+  }
+  .game__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #thermometer {
+    margin-left: 30%;
+  }
+
+  .fields {
+    margin-top: 20%;
+    padding: 0px 5% 0px 0%;
+  }
+
+  .input {
+    width: 120%;
+    margin-left: -5%;
+  }
+
+  .btn {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #submit,
+  #newGame {
+    margin-left: 10%;
+  }
 }
