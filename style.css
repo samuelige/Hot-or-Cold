@@ -48,7 +48,7 @@
   width: 350px;
   margin: 2% 0px 5% 0px;
 }
-#submit,
+.submit,
 #newGame {
   border: 1px solid rgb(29, 161, 242);
   width: 100%;
@@ -57,17 +57,25 @@
   margin-left: 2%;
 }
 
-#submit,
+.submit,
 #newGame {
   height: 10%;
   margin-top: 5.5%;
 }
 .header,
-#submit,
+.submit,
 #newGame {
   padding: 2% 0px 2% 0px;
 }
 
+.hide,
+.mainText {
+  display: none;
+}
+
+.show {
+  display: block;
+}
 /* thermometer */
 
 #thermometer {
@@ -124,6 +132,7 @@
   width: 30px;
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border-radius: 15px 15px 0 0;
+  /* transition: 5s; */
 }
 
 #th-mercury .th-bottom {
@@ -183,7 +192,7 @@
     flex-wrap: wrap;
     width: 100%;
   }
-  #submit,
+  .submit,
   #newGame {
     margin-left: 10%;
   }
