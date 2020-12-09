@@ -19,16 +19,18 @@
         <p class="instruction">Guess the secret number by entering an integer number between 0 and 100</p>
         <div class="game__container">
             <div class="fields">
-                <form class="">
+                <form id="submit">
                     <div class="input">
-                        <input type="text" class="text-input" id="guess" placeholder="kindly enter your guess number">
+                        <input type="text" class="text-input" id="guessInput" placeholder="kindly enter your guess number">
                     </div>
                     <div class="btn">
-                        <button id="submit">Submit</button>
-                        <button id="newGame"> <i class="fa fa-refresh"></i> Return to New Game</button>
+                        <button class="submit"  type="submit">Submit</button>
+                        <button id="newGame" type="click"> <i class="fa fa-refresh"></i> Return to New Game</button>
                     </div>
                 </form>
-                <div id="feedback"></div>
+                <div id="feedback">
+                    <div class="mainText">Waiting for guess!</div>
+                </div>
             </div>
             <div id="thermometer">
                 <div id="th-case">
@@ -50,7 +52,7 @@
             </div>
         </div>
     </div>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
